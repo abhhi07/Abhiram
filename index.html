@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        window.onload = function() {
+            var chatButton = document.createElement("div");
+            chatButton.innerHTML = "💬 Chat with us";
+            chatButton.style.position = "fixed";
+            chatButton.style.bottom = "20px";
+            chatButton.style.right = "20px";
+            chatButton.style.background = "gold";
+            chatButton.style.color = "black";
+            chatButton.style.padding = "10px 20px";
+            chatButton.style.borderRadius = "5px";
+            chatButton.style.cursor = "pointer";
+            chatButton.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
+            chatButton.onclick = function() {
+                alert("Chat feature coming soon!");
+            };
+            document.body.appendChild(chatButton);
+        };
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Oswald:wght@300;400;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: darkblue;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .navbar {
+            background: black;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .banner {
+            background: black;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        .banner h2 {
+            color: gold;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 60px;
+            border-radius: 30px;
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid gold;
+            margin: auto;
+            margin-top: 40px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            background: black;
+            padding: 30px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            color: white;
+        }
+        .feature i {
+            font-size: 40px;
+            color: gold;
+            margin-bottom: 10px;
+        }
+        .feature h3 {
+            color: gold;
+        }
+        button {
+            background-color: gold;
+            color: black;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Get a Quote</a>
+    </div>
+    
+    <div class="banner">
+        <h2>Your Safety, Our Priority</h2>
+    </div>
+    
+    <div class="container">
+        <h1>Professional Security Services</h1>
+        <p>Providing reliable security solutions for businesses, homes, and events.</p>
+        <button>Book a Security Guard</button>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Event Security</h3>
+            <p>Ensuring safety and security for all types of events.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-home"></i>
+            <h3>Residential Guards</h3>
+            <p>Protecting homes and residential areas with trained security personnel.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-building"></i>
+            <h3>Corporate Security</h3>
+            <p>Providing security solutions for businesses and corporate offices.</p>
+        </div>
+    </div>
+</body>
+</html>
